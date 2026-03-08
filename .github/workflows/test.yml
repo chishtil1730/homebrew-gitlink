@@ -8,4 +8,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: brew tap chishtil1730/gitlink
       - run: brew install gitlink
-      - run: gitlink --version
+      - run: gitlink
