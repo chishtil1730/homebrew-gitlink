@@ -1,0 +1,11 @@
+name: Testing Install
+on: push
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew tap chishtil1730/gitlink
+      - run: brew install gitlink
+      - run: gitlink --version
